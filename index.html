@@ -1,0 +1,51 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>MCQ Questions</title>
+    <link rel="stylesheet" href="styles.css" id="theme-style">
+</head>
+<body>
+    <div class="main_container">
+    <input type="file" id="fileInput" accept=".txt">
+    <div class="buttons">
+    <button onclick="loadQuestions()">Load Questions</button>
+    <button onclick="toggleNightMode()">Toggle Night Mode</button>
+    </div>
+ 
+
+    <div id="questions-container"></div>
+
+    <h2 id="questionHeader">Instructions:
+    <ul>
+    <li>1. Go on chatGPT</li>
+    <li>2. Paste the content you want an MCQ made for</li>
+    <li>3. Copy and Paste the prompt bellow <br><br>
+
+        Make me MCQ questions in a text file with the correct option at the bottom using the info I gave you with the format bellow <br>
+        What is the capital of Japan?<br>
+        A. Beijing<br>
+        B. Tokyo<br>
+        C. Seoul<br>
+        D. Bangkok<br>
+        B<br> <br>
+
+        Which planet is known as the "Red Planet"?<br>
+        A. Venus<br>
+        B. Mars<br>
+        C. Jupiter<br>
+        D. Saturn<br>
+        B<br><br>
+    </li>
+    <li>4. Save the output to a .txt file</li>
+    <li>5. Click on the "Choose File" button and select the .txt file</li>
+    <li>6. Click on the "Load Questions" button to load a new set of questions</li>
+    <li>Enjoy</li>
+    </ul>
+    </h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
